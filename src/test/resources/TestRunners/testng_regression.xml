@@ -2,17 +2,17 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Hub spot Test automtion regression suite" verbose="3">
+<suite name="Hub spot Test automation regression suite" verbose="3">
+<listeners>
+<listener class-name = "com.qa.hubspot.listeners.TesultsListener"/>
+</listeners>
+
 	<test name="Login Page test">
 		<classes>
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
 		</classes>
 	</test>
 	
-	<test name="home page test">
-		<classes>
-			<class name="com.qa.hubspot.tests.HomePageTest" />
-		</classes>
-	</test>
+	
 
 </suite>
